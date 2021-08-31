@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: initial;
+  border: none;
+  background-color: initial;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "Shrikhand";
+  src: url("../fonts/shrikhand/Shrikhand-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+.intro-title {
+  font-family: "Shrikhand";
+  font-size: 3.2rem;
+}
+
+.menu-title {
+  font-family: "Roboto";
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
