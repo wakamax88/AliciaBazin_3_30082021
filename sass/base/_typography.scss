@@ -1,0 +1,21 @@
+// _typography.scss
+$path-font-shrikhand: "../fonts/shrikhand";
+$path-font-roboto: "../fonts/roboto";
+@font-face {
+    font-family: 'Shrikhand';
+    src: url($path-font-shrikhand + '/Shrikhand-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url($path-font-roboto + '/Roboto-Bold.ttf') format('truetype');
+}
+$font-heading: 'Shrikhand';
+$font-text: 'Roboto';
+.intro-title {
+    font-family: $font-heading;
+    font-size: 3.2rem;
+}
+.menu-title {
+    font-family: $font-text;
+    font-size: 1.6rem;
+}
