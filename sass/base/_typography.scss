@@ -1,24 +1,59 @@
 // _typography.scss
 $path-font-shrikhand: "../fonts/shrikhand";
 $path-font-roboto: "../fonts/roboto";
+
 @font-face {
     font-family: 'Shrikhand';
     src: url($path-font-shrikhand + '/Shrikhand-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'RobotoBold';
     src: url($path-font-roboto + '/Roboto-Bold.ttf') format('truetype');
 }
-$font-heading: 'Shrikhand';
-$font-text: 'Roboto';
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url($path-font-roboto + '/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'RobotoThin';
+    src: url($path-font-roboto + '/Roboto-Thin.ttf') format('truetype');
+}
 
-.heading-intro {
-    font-family: $font-heading;
-    font-size: 3.2rem;
-}
-.heading-menu {
-    text-transform: uppercase;
-}
+$font-heading: 'Shrikhand';
+$font-text-bold: 'RobotoBold';
+$font-text-regular: 'RobotoRegular';
+$font-text-thin: 'RobotoThin';
+
 .header-icon {
-    font-size: 3.2rem;
+    font-size: 1.6rem;
+}
+
+.restaurant-heading {
+    font-family: $font-heading;
+    font-size: 2.4rem;
+}
+.menu-heading {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-family: $font-text-regular;
+    font-weight: 400;
+    padding-bottom: 24px;
+    text-decoration: underline 2px $color-tertiary-light;
+    text-underline-offset: 0.8rem;
+}
+.menu-choice__box {
+    &-price {
+        font-family: $font-text-bold;
+        font-size: 1.4rem;
+    }
+    &-heading--main {
+        font-family: $font-text-bold;
+        font-size: 1.6rem;
+        white-space: nowrap;
+    }
+    &-heading--sub {
+        font-family: $font-text-thin;
+        font-size: 1.4rem;
+        white-space: nowrap;
+    }
 }

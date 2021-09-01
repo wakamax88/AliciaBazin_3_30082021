@@ -1,0 +1,37 @@
+// _menu.scss
+.menu {
+    padding: 0 16px;
+    background-color: $color-grey-light-2;
+}
+.menu-form {
+}
+.menu-choice {
+    &__box {
+        position: relative;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+        &-label {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-label:hover {
+            cursor: pointer;
+        }
+        &-heading {
+            padding: 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        &-price {
+            padding: 8px;
+            align-self: flex-end;
+            flex: 0 0 auto;
+        }
+        &-checkmark {
+        }
+        &-checkbox {
+        }
+    }
+}

@@ -17,34 +17,123 @@ html {
   src: url("../fonts/shrikhand/Shrikhand-Regular.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "RobotoBold";
   src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
 }
-.heading-intro {
-  font-family: "Shrikhand";
-  font-size: 3.2rem;
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
-
-.heading-menu {
-  text-transform: uppercase;
+@font-face {
+  font-family: "RobotoThin";
+  src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
 }
-
 .header-icon {
-  font-size: 3.2rem;
+  font-size: 1.6rem;
+}
+
+.restaurant-heading {
+  font-family: "Shrikhand";
+  font-size: 2.4rem;
+}
+
+.menu-heading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: "RobotoRegular";
+  font-weight: 400;
+  padding-bottom: 24px;
+  text-decoration: underline 2px #99E2D0;
+  text-underline-offset: 0.8rem;
+}
+
+.menu-choice__box-price {
+  font-family: "RobotoBold";
+  font-size: 1.4rem;
+}
+.menu-choice__box-heading--main {
+  font-family: "RobotoBold";
+  font-size: 1.6rem;
+  white-space: nowrap;
+}
+.menu-choice__box-heading--sub {
+  font-family: "RobotoThin";
+  font-size: 1.4rem;
+  white-space: nowrap;
 }
 
 body {
-  max-width: 80%;
+  /*max-width: 375px;*/
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 header {
   display: flex;
   flex-direction: row;
-  height: 60px;
   align-items: center;
+  height: 60px;
   padding: 16px;
-  justify-content: center;
+}
+
+.header-logo {
+  margin: 0 auto;
+}
+
+.restaurant {
+  height: 320px;
+  position: relative;
+}
+
+.restaurant-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.restaurant-heading {
+  border: white 2px solid;
+  border-radius: 48px;
+  position: absolute;
+  bottom: 12px;
+  padding: 32px 16px 16px 16px;
+  background-color: white;
+  width: 100%;
+}
+
+.heading-icon {
+  position: absolute;
+  right: 32px;
+}
+
+.menu {
+  padding: 0 16px;
+  background-color: #eaeaea;
+}
+
+.menu-choice__box {
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+.menu-choice__box-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu-choice__box-label:hover {
+  cursor: pointer;
+}
+.menu-choice__box-heading {
+  padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-choice__box-price {
+  padding: 8px;
+  align-self: flex-end;
+  flex: 0 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

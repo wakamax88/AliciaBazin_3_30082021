@@ -2,8 +2,10 @@
 header {
     display: flex;
     flex-direction: row;
-    height: 60px;
     align-items: center;
+    height: 60px;
     padding: 16px;
-    justify-content: center;
+}
+.header-logo {
+    margin: 0 auto;
 }
