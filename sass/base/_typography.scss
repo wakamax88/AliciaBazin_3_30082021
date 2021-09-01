@@ -11,11 +11,14 @@ $path-font-roboto: "../fonts/roboto";
 }
 $font-heading: 'Shrikhand';
 $font-text: 'Roboto';
-.intro-title {
+
+.heading-intro {
     font-family: $font-heading;
     font-size: 3.2rem;
 }
-.menu-title {
-    font-family: $font-text;
-    font-size: 1.6rem;
+.heading-menu {
+    text-transform: uppercase;
+}
+.header-icon {
+    font-size: 3.2rem;
 }
