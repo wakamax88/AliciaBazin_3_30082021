@@ -31,15 +31,13 @@ $font-text-thin: 'RobotoThin';
 .restaurant-heading {
     font-family: $font-heading;
     font-size: 2.4rem;
+    white-space: nowrap;
 }
 .menu-heading {
     text-transform: uppercase;
     font-size: 1.6rem;
     font-family: $font-text-regular;
     font-weight: 400;
-    padding-bottom: 24px;
-    text-decoration: underline 2px $color-tertiary-light;
-    text-underline-offset: 0.8rem;
 }
 .menu-choice__box {
     &-price {
@@ -50,10 +48,42 @@ $font-text-thin: 'RobotoThin';
         font-family: $font-text-bold;
         font-size: 1.6rem;
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &-heading--sub {
         font-family: $font-text-thin;
         font-size: 1.4rem;
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
+}
+.menu-submit {
+    font-family: $font-text-regular;
+    font-size: 1.4rem;
+}
+.footer-heading {
+    font-family: $font-heading;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+.footer-list {
+    font-size: 1.6rem;
+    font-family: $font-text-regular;
+}
+.footer {
+    &-icon {
+        padding-right: 8px;
+        & i {
+            width: 16px;
+            aspect-ratio: 1;
+        }
+    }
+}
+.fa-check-circle {
+    position: relative;
+    top: 30%;
+    color: white;
+    font-size: 20px;
 }

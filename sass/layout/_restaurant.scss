@@ -2,6 +2,7 @@
 .restaurant {
     height: 320px;
     position: relative;
+    background-color: $color-grey-light-2;
 }
 .restaurant-img {
     width: 100%;
@@ -9,12 +10,11 @@
     object-fit: cover;
 }
 .restaurant-heading {
-    border: white 2px solid;
     border-radius: 48px;
     position: absolute;
     bottom: 12px;
     padding: 32px 16px 16px 16px;
-    background-color: white;
+    background-color: inherit;
     width: 100%;
 }
 .heading-icon {
