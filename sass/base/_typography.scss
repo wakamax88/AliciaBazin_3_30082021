@@ -87,3 +87,26 @@ $font-text-thin: 'RobotoThin';
     color: white;
     font-size: 20px;
 }
+.intro {
+    &-heading {
+        font-family: $font-text-bold;
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    &-paragraphe {
+        font-family: $font-text-thin;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+.heading {
+    &-step {
+        font-family: $font-text-bold;
+        font-size: 2.4rem;
+        font-weight: 400;
+    }
+}
+.fa-heart {
+    font-size: 20px;
+}

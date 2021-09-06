@@ -95,6 +95,28 @@ html {
   font-size: 20px;
 }
 
+.intro-heading {
+  font-family: "RobotoBold";
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.intro-paragraphe {
+  font-family: "RobotoThin";
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.heading-step {
+  font-family: "RobotoBold";
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.fa-heart {
+  font-size: 20px;
+}
+
 body {
   /*max-width: 375px;*/
   margin: 0 auto;
@@ -162,6 +184,46 @@ footer * {
   right: 32px;
 }
 
+.list-resto {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  background-color: #eaeaea;
+}
+
+.gallery {
+  display: grid;
+  gap: 16px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+}
+.card-new {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding: 6px 12px;
+  background-color: #99E2D0;
+  color: #139273;
+}
+.card-img {
+  width: 100%;
+  height: 180px;
+}
+.card-legend {
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .menu {
   padding: 0 16px;
   background-color: #eaeaea;
@@ -227,6 +289,25 @@ hr {
   padding: 16px 48px;
   border-radius: 24px;
   align-self: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 44px;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  gap: 24;
+  padding: 24px;
+}
+.fonctionnement-list {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */

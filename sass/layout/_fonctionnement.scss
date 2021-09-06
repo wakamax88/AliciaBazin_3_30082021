@@ -1,0 +1,10 @@
+// _fonctionnement.scss
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 24;
+    padding: 24px;
+    &-list {
+        list-style: none;
+    }
+}
