@@ -32,60 +32,40 @@ html {
   font-size: 1.6rem;
 }
 
-.restaurant-heading {
-  font-family: "Shrikhand";
-  font-size: 2.4rem;
-  white-space: nowrap;
-}
-
-.menu-heading {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  font-family: "RobotoRegular";
-  font-weight: 400;
-}
-
 .menu-choice__box-price {
-  font-family: "RobotoBold";
+  font-family: "RobotoBold", sans-serif;
   font-size: 1.4rem;
 }
 .menu-choice__box-heading--main {
-  font-family: "RobotoBold";
+  font-family: "RobotoBold", sans-serif;
   font-size: 1.6rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu-choice__box-heading--sub {
-  font-family: "RobotoThin";
+  font-family: "RobotoThin", sans-serif;
   font-size: 1.4rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.menu-submit {
-  font-family: "RobotoRegular";
-  font-size: 1.4rem;
-}
-
-.footer-heading {
-  font-family: "Shrikhand";
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-}
-
 .footer-list {
   font-size: 1.6rem;
-  font-family: "RobotoRegular";
+  font-family: "RobotoRegular", sans-serif;
 }
 
-.footer-icon {
+.icon-footer {
   padding-right: 8px;
 }
-.footer-icon i {
+.icon-footer i {
   width: 16px;
   aspect-ratio: 1;
+}
+.icon-card:hover {
+  background: #ff79da;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
 }
 
 .fa-check-circle {
@@ -95,26 +75,84 @@ html {
   font-size: 20px;
 }
 
-.intro-heading {
-  font-family: "RobotoBold";
+.heading {
+  font-family: "RobotoBold", sans-serif;
   font-size: 2.4rem;
   font-weight: 400;
+}
+.heading-intro {
   text-align: center;
 }
-.intro-paragraphe {
-  font-family: "RobotoThin";
+.heading-menu {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-family: "RobotoRegular", sans-serif;
+}
+.heading-footer {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.heading-paragraphe {
+  font-family: "RobotoThin", sans-serif;
   font-size: 1.6rem;
   text-align: center;
 }
-
-.heading-step {
-  font-family: "RobotoBold";
+.heading-resto {
+  font-family: "Shrikhand", cursive;
   font-size: 2.4rem;
-  font-weight: 400;
+  white-space: nowrap;
 }
 
 .fa-heart {
   font-size: 20px;
+}
+
+.btn {
+  background: #ff79da;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 24px;
+  align-self: center;
+  font-family: "RobotoRegular", sans-serif;
+  font-size: 1.4rem;
+}
+.btn-submit:hover {
+  filter: brightness(1.25);
+}
+.btn-submit-order {
+  padding: 16px 48px;
+}
+.btn-submit-search {
+  padding: 16px 24px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  border-radius: 16px;
+}
+.card-new {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  padding: 6px 12px;
+  background-color: #99E2D0;
+  color: #139273;
+}
+.card-img {
+  width: 100%;
+  height: 180px;
+}
+.card-legend {
+  padding: 16px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 body {
@@ -158,19 +196,42 @@ footer * {
   width: 100%;
 }
 
-.restaurant {
+.form-search {
+  text-align-last: center;
+  background-color: #f6f6f6;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 2px inset #eaeaea;
+}
+.form-menu {
+  padding: 0 16px;
+  background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 80px;
+}
+
+.hr {
+  color: #99E2D0;
+  width: 40px;
+  border-bottom: 2px solid;
+  padding-top: 8px;
+}
+
+.resto {
   height: 320px;
   position: relative;
   background-color: #eaeaea;
 }
 
-.restaurant-img {
+.img-resto {
   width: 100%;
   height: 260px;
   object-fit: cover;
 }
 
-.restaurant-heading {
+.heading-resto {
   border-radius: 48px;
   position: absolute;
   bottom: 12px;
@@ -179,12 +240,12 @@ footer * {
   width: 100%;
 }
 
-.heading-icon {
+.icon-resto {
   position: absolute;
   right: 32px;
 }
 
-.list-resto {
+.list {
   display: flex;
   flex-direction: column;
   padding: 24px;
@@ -195,49 +256,6 @@ footer * {
 .gallery {
   display: grid;
   gap: 16px;
-}
-
-.card-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background-color: white;
-  border-radius: 16px;
-}
-.card-new {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  padding: 6px 12px;
-  background-color: #99E2D0;
-  color: #139273;
-}
-.card-img {
-  width: 100%;
-  height: 180px;
-}
-.card-legend {
-  padding: 16px 8px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu {
-  padding: 0 16px;
-  background-color: #eaeaea;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  padding-bottom: 80px;
-}
-
-hr {
-  color: #99E2D0;
-  width: 40px;
-  border-bottom: 2px solid;
-  padding-top: 8px;
 }
 
 .menu-choice {
@@ -279,16 +297,6 @@ hr {
 .menu-choice__box-checkbox {
   position: absolute;
   top: 0;
-}
-
-.menu-submit {
-  background: #ff79da;
-  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
-  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
-  color: white;
-  padding: 16px 48px;
-  border-radius: 24px;
-  align-self: center;
 }
 
 .intro {

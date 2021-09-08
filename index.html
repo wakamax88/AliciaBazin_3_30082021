@@ -14,29 +14,27 @@
         <a class="header-link" href="index.html" aria-label="Accueil"><i class="header-icon fas fa-arrow-left"></i></a>
         <img class="header-logo" src="/img/logo/ohmyfood@2x.svg" alt="Logo Oh My Food">
     </header>
-    <div>
-        <form action="#" id="form-search">
-            <label for="search">
-                <span class="search-icon"><i class="fas fa-map-marker-alt"></i></span>
-            </label>
-            <input type="search" name="search" id="search" placeholder="Paris, Belleville">
-        </form>
-    </div>
-    <div class="intro">
-        <h1 class="intro-heading">Réservez le menu qui vous convient</h1>
-        <p class="intro-paragraphe">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <input class="intro-submit" type="submit" value="Explorer nos restaurants" form="form-search">
-    </div>
-    <div class="fonctionnement">
-        <h2 class="heading-step">Fonctionnement</h2>
+    <form action="#" class="form form-search" id="form-search">
+        <label for="search">
+            <span class="icon icon-search"><i class="fas fa-map-marker-alt"></i></span>
+        </label>
+        <input type="search" name="search" id="search" placeholder="Paris, Belleville">
+    </form>
+    <main class="intro">
+        <h1 class="heading heading-intro">Réservez le menu qui vous convient</h1>
+        <p class="heading heading-paragraphe">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <input class="btn btn-submit btn-submit-search" type="submit" value="Explorer nos restaurants" form="form-search">
+    </main>
+    <section class="step">
+        <h2 class="heading heading-step">Fonctionnement</h2>
         <ol class="fonctionnement-list">
             <li><span>icon</span>Choisissez un restaurant</li>
             <li><span>icon</span>Composez votre menu</li>
             <li><span>icon</span>Dégustez au restaurant</li>
         </ol>
-    </div>
-    <div class="list-resto">
-        <h2 class="heading-step">Restaurants</h2>
+    </section>
+    <section class="list">
+        <h2 class="heading heading-list">Restaurants</h2>
         <div class="gallery">
             <a class="card-link" href="restaurant_01">
                 <article class="card-container">
@@ -47,7 +45,7 @@
                             <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
                         </div>
-                        <span><i class="far fa-heart"></i></span>
+                        <span class="icon icon-card"><i class="far fa-heart"></i></span>
                     </div>
                 </article>
             </a>
@@ -60,7 +58,7 @@
                             <h3>La note enchantée</h3>
                             <p>Charonne</p>
                         </div>
-                        <span><i class="far fa-heart"></i></span>
+                        <span class="icon icon-card"><i class="far fa-heart"></i></span>
                     </div>
                 </article>
             </a>
@@ -73,7 +71,7 @@
                             <h3>A la française</h3>
                             <p>Cité Rouge</p>
                         </div>
-                        <span><i class="far fa-heart"></i></span>
+                        <span class="icon icon-card"><i class="far fa-heart"></i></span>
                     </div>
                 </article>
             </a>
@@ -86,17 +84,17 @@
                             <h3>Le délice des sens</h3>
                             <p>Folie-Méricourt</p>
                         </div>
-                        <span><i class="far fa-heart"></i></span>
+                        <span class="icon icon-card"><i class="far fa-heart"></i></span>
                     </div>
                 </article>
             </a>
         </div>
-    </div>
+    </section>
     <footer>
-        <h5 class="footer-heading">ohmyfood</h5>
+        <h5 class="heading heading-footer">ohmyfood</h5>
         <ul class="footer-list">
-            <li><span class="footer-icon"><i class="fas fa-utensils"></i></span> Proposer un restaurant</li>
-            <li><span class="footer-icon"><i class="fas fa-hands-helping"></i></span> Devenir partenaire</li>
+            <li><span class="icon icon-footer"><i class="fas fa-utensils"></i></span> Proposer un restaurant</li>
+            <li><span class="icon icon-footer"><i class="fas fa-hands-helping"></i></span> Devenir partenaire</li>
             <li>Mentions légales</li>
             <li><a href="mailto:">Contact</a></li>
         </ul>
