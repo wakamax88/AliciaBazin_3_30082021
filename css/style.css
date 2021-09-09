@@ -51,8 +51,8 @@ html {
   text-overflow: ellipsis;
 }
 
-.footer-list {
-  font-size: 1.6rem;
+.list {
+  font-size: 1.4rem;
   font-family: "RobotoRegular", sans-serif;
 }
 
@@ -68,24 +68,16 @@ html {
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
 }
 
-.fa-check-circle {
-  position: relative;
-  top: 30%;
-  color: white;
-  font-size: 20px;
-}
-
 .heading {
   font-family: "RobotoBold", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 400;
+  font-size: 2rem;
 }
 .heading-intro {
   text-align: center;
 }
 .heading-menu {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: "RobotoRegular", sans-serif;
 }
 .heading-footer {
@@ -93,15 +85,27 @@ html {
   font-size: 1.6rem;
   letter-spacing: 1px;
 }
-.heading-paragraphe {
+.heading-resto {
+  font-family: "Shrikhand", cursive;
+  font-size: 2rem;
+  white-space: nowrap;
+}
+
+.text-intro {
   font-family: "RobotoThin", sans-serif;
   font-size: 1.6rem;
   text-align: center;
 }
-.heading-resto {
-  font-family: "Shrikhand", cursive;
-  font-size: 2.4rem;
-  white-space: nowrap;
+
+.icon-header {
+  font-size: 1.6rem;
+}
+
+.fa-check-circle {
+  position: relative;
+  top: 30%;
+  color: white;
+  font-size: 20px;
 }
 
 .fa-heart {
@@ -185,14 +189,14 @@ footer * {
   color: white;
 }
 
-.footer-list {
+.list-footer {
   list-style: none;
 }
-.footer-list li:not(last-child) {
+.list-footer li:not(last-child) {
   padding-bottom: 8px;
 }
 
-.footer-heading {
+.heading-footer {
   width: 100%;
 }
 
@@ -245,7 +249,7 @@ footer * {
   right: 32px;
 }
 
-.list {
+.bistro {
   display: flex;
   flex-direction: column;
   padding: 24px;

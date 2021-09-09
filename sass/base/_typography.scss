@@ -52,8 +52,8 @@ $font-text-thin: 'RobotoThin', sans-serif;
 }
 
 
-.footer-list {
-    font-size: 1.6rem;
+.list {
+    font-size: 1.4rem;
     font-family: $font-text-regular;
 }
 .icon {
@@ -69,22 +69,16 @@ $font-text-thin: 'RobotoThin', sans-serif;
         background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     }
 }
-.fa-check-circle {
-    position: relative;
-    top: 30%;
-    color: white;
-    font-size: 20px;
-}
+// HEADING
 .heading {
     font-family: $font-text-bold;
-    font-size: 2.4rem;
-    font-weight: 400;
+    font-size: 2rem;
     &-intro {
         text-align: center;
     }
     &-menu {
         text-transform: uppercase;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-family: $font-text-regular;
     }
     &-footer {
@@ -92,16 +86,31 @@ $font-text-thin: 'RobotoThin', sans-serif;
         font-size: 1.6rem;
         letter-spacing: 1px;
     }
-    &-paragraphe {
+    &-resto {
+        font-family: $font-heading;
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+}
+// TEXT
+.text {
+    &-intro {
         font-family: $font-text-thin;
         font-size: 1.6rem;
         text-align: center;
     }
-    &-resto {
-        font-family: $font-heading;
-        font-size: 2.4rem;
-        white-space: nowrap;
+}
+// ICON
+.icon {
+    &-header {
+        font-size: 1.6rem;
     }
+}
+.fa-check-circle {
+    position: relative;
+    top: 30%;
+    color: white;
+    font-size: 20px;
 }
 .fa-heart {
     font-size: 20px;

@@ -11,12 +11,12 @@ footer {
         color: white;
     }
 }
-.footer-list {
+.list-footer {
     list-style: none;
     & li:not(last-child) {
         padding-bottom: 8px;
     }
 }
-.footer-heading {
+.heading-footer {
     width: 100%;
 }
