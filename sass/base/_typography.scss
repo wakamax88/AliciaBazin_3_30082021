@@ -52,10 +52,6 @@ $font-text-thin: 'RobotoThin', sans-serif;
 }
 
 
-.list {
-    font-size: 1.4rem;
-    font-family: $font-text-regular;
-}
 .icon {
     &-footer {
         padding-right: 8px;
@@ -64,7 +60,8 @@ $font-text-thin: 'RobotoThin', sans-serif;
             aspect-ratio: 1;
         }
     }
-    &-card:hover {
+    &-card i:hover {
+        
         background: rgb(255,121,218);
         background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     }
@@ -99,11 +96,28 @@ $font-text-thin: 'RobotoThin', sans-serif;
         font-size: 1.6rem;
         text-align: center;
     }
+    &-card {
+        font-family: $font-text-thin;
+        font-size: 1.6rem;
+    }
+    &-list {
+        font-size: 1.4rem;
+        font-family: $font-text-bold;
+    }
 }
 // ICON
 .icon {
     &-header {
         font-size: 1.6rem;
+    }
+    &-card {
+        font-size: 2rem;
+    }
+    &-step {
+        font-size: 1.8rem;
+        i {
+            color: $color-grey-dark;
+        }
     }
 }
 .fa-check-circle {
