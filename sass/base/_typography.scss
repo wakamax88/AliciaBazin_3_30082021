@@ -1,21 +1,137 @@
 // _typography.scss
 $path-font-shrikhand: "../fonts/shrikhand";
 $path-font-roboto: "../fonts/roboto";
+
 @font-face {
     font-family: 'Shrikhand';
     src: url($path-font-shrikhand + '/Shrikhand-Regular.ttf') format('truetype');
 }
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'RobotoBold';
     src: url($path-font-roboto + '/Roboto-Bold.ttf') format('truetype');
 }
-$font-heading: 'Shrikhand';
-$font-text: 'Roboto';
-.intro-title {
-    font-family: $font-heading;
-    font-size: 3.2rem;
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url($path-font-roboto + '/Roboto-Regular.ttf') format('truetype');
 }
-.menu-title {
-    font-family: $font-text;
-    font-size: 1.6rem;
+@font-face {
+    font-family: 'RobotoThin';
+    src: url($path-font-roboto + '/Roboto-Thin.ttf') format('truetype');
 }
+
+$font-heading: 'Shrikhand', cursive;
+$font-text-bold: 'RobotoBold', sans-serif;
+$font-text-regular: 'RobotoRegular', sans-serif;
+$font-text-thin: 'RobotoThin', sans-serif;
+
+
+
+.menu-choice__box {
+    &-price {
+        font-family: $font-text-bold;
+        font-size: 1.4rem;
+    }
+    &-heading--main {
+        font-family: $font-text-bold;
+        font-size: 1.6rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &-heading--sub {
+        font-family: $font-text-thin;
+        font-size: 1.4rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+// HEADING
+.heading {
+    font-family: $font-text-bold;
+    font-size: 2rem;
+    &-intro {
+        text-align: center;
+    }
+    &-menu {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-family: $font-text-regular;
+    }
+    &-footer {
+        font-family: $font-heading;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    &-resto {
+        font-family: $font-heading;
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+}
+// TEXT
+.text {
+    &-intro {
+        font-family: $font-text-thin;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    &-card {
+        font-family: $font-text-thin;
+        font-size: 1.6rem;
+    }
+    &-list {
+        font-size: 1.4rem;
+        font-family: $font-text-bold;
+    }
+    &-list-footer {
+        font-size: 1.4rem;
+        font-family: $font-text-regular;
+    }
+}
+// ICON
+.icon {
+    &-header {
+        font-size: 1.6rem;
+    }
+    &-search {
+        font-size: 1.6rem;
+    }
+    &-card {
+        padding-right: 20px;
+        font-size: 2rem;
+        .fas {
+            font-weight: 100;
+        }
+        .far {
+            color: $color-grey-light-2;
+        }
+        &:hover .fas {
+            font-weight: 900;
+            color: rgba(147,86,220,1);
+        }
+    }
+    &-step {
+        font-size: 1.8rem;
+        i {
+            color: $color-grey-dark;
+        }
+        .fa-store {
+            color: $color-primary;
+        }
+    }
+    &-footer {
+        padding-right: 8px;
+        & i {
+            width: 16px;
+            aspect-ratio: 1;
+        }
+    }
+}
+.fa-check-circle {
+    position: relative;
+    top: 30%;
+    color: white;
+    font-size: 20px;
+}
+

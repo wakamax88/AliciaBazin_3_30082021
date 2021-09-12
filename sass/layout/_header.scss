@@ -1,0 +1,11 @@
+// _header.scss
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    padding: 16px;
+}
+.header-logo {
+    margin: 0 auto;
+}

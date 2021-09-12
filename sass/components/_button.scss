@@ -1,0 +1,20 @@
+// _button.scss
+.btn {
+    background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    border-radius: 24px;
+    align-self: center;
+    font-family: $font-text-regular;
+    font-size: 1.4rem;
+    &-submit:hover {
+        filter: brightness(1.25);
+        box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.30);
+    }
+    &-submit-order {
+        padding: 16px 48px;
+    }
+    &-submit-search {
+        padding: 16px 24px;
+    }
+}

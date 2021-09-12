@@ -5,99 +5,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <a href="index.html" aria-label="Accueil">Flèche</a>
-        <img src="" alt="Logo Oh My Food">
+        <a class="header-link" href="index.html" aria-label="Accueil"><i class="icon icon-header fas fa-arrow-left"></i></a>
+        <img class="header-logo" src="/img/logo/ohmyfood@2x.svg" alt="Logo Oh My Food">
     </header>
-    <div>
-        <form action="#" id="form-search">
-            <label for="search">
-                <span>icon</span>
-            </label>
-            <input type="search" name="search" id="search" placeholder="Paris, Belleville">
-        </form>
-    </div>
-    <div id="intro">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-        <input type="submit" value="Explorer nos restaurants" form="form-search">
-    </div>
-    <div id="fonctionnement">
-        <h2>Fonctionnement</h2>
-        <ol>
-            <li><span>icon</span>Choisissez un restaurant</li>
-            <li><span>icon</span>Composez votre menu</li>
-            <li><span>icon</span>Dégustez au restaurant</li>
+    <form action="#" class="form form-search" id="form-search">
+        <label for="search">
+            <span class="icon icon-search"><i class="fas fa-map-marker-alt"></i></span>
+        </label>
+        <input type="search" name="search" id="search" placeholder="Paris, Belleville">
+    </form>
+    <main class="intro">
+        <h1 class="heading heading-intro">Réservez le menu qui vous convient</h1>
+        <p class="text text-intro">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+        <input class="btn btn-submit btn-submit-search" type="submit" value="Explorer nos restaurants" form="form-search">
+    </main>
+    <section class="step">
+        <h2 class="heading heading-step">Fonctionnement</h2>
+        <ol class="list list-step">
+            <li><span class="number-step">1</span><span class="icon icon-step"><i class="fas fa-mobile-alt"></i></span><span class="text text-list">Choisissez un restaurant</span></li>
+            <li><span class="number-step">2</span><span class="icon icon-step"><i class="fas fa-list"></i></span><span class="text text-list">Composez votre menu</span></li>
+            <li><span class="number-step">3</span><span class="icon icon-step"><i class="fas fa-store"></i></span><span class="text text-list">Dégustez au restaurant</span></li>
         </ol>
-    </div>
-    <div id="restaurants">
-        <h2>Restaurants</h2>
+    </section>
+    <section class="bistro">
+        <h2 class="heading heading-bistro">Restaurants</h2>
         <div class="gallery">
             <a class="card-link" href="restaurant_01">
                 <article class="card-container">
-                    <img src="" alt="Restaurant La palette du goût">
+                    <img class="card-img" src="img/restaurants/restaurants_01.jpg" alt="Restaurant La palette du goût">
                     <div class="card-new">Nouveau</div>
                     <div class="card-legend">
-                        <div>
-                            <h3>La palette du goût</h3>
-                            <p>Ménilmontant</p>
+                        <div class="card-legend_heading">
+                            <h3 class="heading heading-card">La palette du goût</h3>
+                            <p class="text text-card" >Ménilmontant</p>
                         </div>
-                        <span>favoris</span>
+                        <span class="icon icon-card"><i class="far fas fa-heart"></i></span>
                     </div>
                 </article>
             </a>
             <a class="card-link" href="restaurant_02">
                 <article class="card-container">
-                    <img src="" alt="Restaurant La note enchantée">
+                    <img class="card-img" src="img/restaurants/restaurants_02.jpg" alt="Restaurant La note enchantée">
                     <div class="card-new">Nouveau</div>
                     <div class="card-legend">
                         <div>
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
+                            <h3 class="heading heading-card">La note enchantée</h3>
+                            <p class="text text-card" >Charonne</p>
                         </div>
-                        <span>favoris</span>
+                        <span class="icon icon-card"><i class="far fas fa-heart"></i></span>
                     </div>
                 </article>
             </a>
             <a class="card-link" href="restaurant_03">
                 <article class="card-container">
-                    <img src="" alt="Restaurant A la française">
+                    <img class="card-img" src="img/restaurants/restaurants_03.jpg" alt="Restaurant A la française">
                     <div class="card-new">Nouveau</div>
                     <div class="card-legend">
                         <div>
-                            <h3>A la française</h3>
-                            <p>Cité Rouge</p>
+                            <h3 class="heading heading-card">A la française</h3>
+                            <p class="text text-card" >Cité Rouge</p>
                         </div>
-                        <span>favoris</span>
+                        <span class="icon icon-card"><i class="far fas fa-heart"></i></span>
                     </div>
                 </article>
             </a>
             <a class="card-link" href="restaurant_04">
                 <article class="card-container">
-                    <img src="" alt="Restaurant Le délice des sens">
+                    <img class="card-img" src="img/restaurants/restaurants_04.jpg" alt="Restaurant Le délice des sens">
                     <div class="card-new">Nouveau</div>
                     <div class="card-legend">
                         <div>
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
+                            <h3 class="heading heading-card">Le délice des sens</h3>
+                            <p class="text text-card" >Folie-Méricourt</p>
                         </div>
-                        <span>favoris</span>
+                        <span class="icon icon-card"><i class="far fas fa-heart"></i></span>
                     </div>
                 </article>
             </a>
         </div>
-    </div>
+    </section>
     <footer>
-        <h5>ohmyfood</h5>
-        <ul>
-            <li><span>icon</span> Proposer un restaurant</li>
-            <li><span>icon</span> Devenir partenaire</li>
-            <li>Mentions légales</li>
-            <li><a href="mailto:">Contact</a></li>
+        <h5 class="heading heading-footer">ohmyfood</h5>
+        <ul class="list list-footer">
+            <li><span class="icon icon-footer"><i class="fas fa-utensils"></i></span><span class="text text-list-footer">Proposer un restaurant</span></li>
+            <li><span class="icon icon-footer"><i class="fas fa-hands-helping"></i></span><span class="text text-list-footer">Devenir partenaire</span></li>
+            <li><span class="text text-list-footer">Mentions légales</span></li>
+            <li><a href="mailto:"><span class="text text-list-footer">Contact</span></a></li>
         </ul>
     </footer>
 </body>
