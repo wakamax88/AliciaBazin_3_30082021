@@ -24,10 +24,6 @@ $font-text-bold: 'RobotoBold', sans-serif;
 $font-text-regular: 'RobotoRegular', sans-serif;
 $font-text-thin: 'RobotoThin', sans-serif;
 
-.header-icon {
-    font-size: 1.6rem;
-}
-
 
 
 .menu-choice__box {
@@ -48,22 +44,6 @@ $font-text-thin: 'RobotoThin', sans-serif;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-    }
-}
-
-
-.icon {
-    &-footer {
-        padding-right: 8px;
-        & i {
-            width: 16px;
-            aspect-ratio: 1;
-        }
-    }
-    &-card i:hover {
-        
-        background: rgb(255,121,218);
-        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
     }
 }
 // HEADING
@@ -104,19 +84,47 @@ $font-text-thin: 'RobotoThin', sans-serif;
         font-size: 1.4rem;
         font-family: $font-text-bold;
     }
+    &-list-footer {
+        font-size: 1.4rem;
+        font-family: $font-text-regular;
+    }
 }
 // ICON
 .icon {
     &-header {
         font-size: 1.6rem;
     }
+    &-search {
+        font-size: 1.6rem;
+    }
     &-card {
+        padding-right: 20px;
         font-size: 2rem;
+        .fas {
+            font-weight: 100;
+        }
+        .far {
+            color: $color-grey-light-2;
+        }
+        &:hover .fas {
+            font-weight: 900;
+            color: rgba(147,86,220,1);
+        }
     }
     &-step {
         font-size: 1.8rem;
         i {
             color: $color-grey-dark;
+        }
+        .fa-store {
+            color: $color-primary;
+        }
+    }
+    &-footer {
+        padding-right: 8px;
+        & i {
+            width: 16px;
+            aspect-ratio: 1;
         }
     }
 }
@@ -126,6 +134,4 @@ $font-text-thin: 'RobotoThin', sans-serif;
     color: white;
     font-size: 20px;
 }
-.fa-heart {
-    font-size: 20px;
-}
+

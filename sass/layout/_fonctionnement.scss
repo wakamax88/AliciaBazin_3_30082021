@@ -20,6 +20,9 @@
         border-radius: 32px;
         box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
     }
+    &-step > :last-child {
+        background-color: $color-primary-light;
+    }
     &-step li span:not(:first-of-type) {
         padding-left: 18px;
     }
