@@ -27,3 +27,19 @@
     position: relative;
     animation: animatebottom 1s linear 3s forwards;
 }
+.wrapper-menu{
+    opacity: 0;
+    position: relative;
+    &-01 {
+        opacity: 0;
+        animation: animatebottom 1s ease-out forwards;
+    }
+    &-02 {
+        opacity: 0;
+        animation: animatebottom 1s ease-out 1s forwards;
+    }
+    &-03 {
+        opacity: 0;
+        animation: animatebottom 1s ease-out 2s forwards;
+    }
+}

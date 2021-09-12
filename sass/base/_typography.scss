@@ -107,6 +107,7 @@ $font-text-thin: 'RobotoThin', sans-serif;
             color: $color-grey-light-2;
         }
         &:hover .fas {
+            transition: color 2s;
             font-weight: 900;
             color: rgba(147,86,220,1);
         }
