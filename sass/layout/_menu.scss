@@ -2,7 +2,8 @@
 
 .menu-choice {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 12px;
     &__box {
         position: relative;
