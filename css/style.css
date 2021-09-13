@@ -91,6 +91,9 @@ html {
 .icon-header {
   font-size: 1.6rem;
 }
+.icon-header-home {
+  opacity: 0;
+}
 .icon-search {
   font-size: 1.6rem;
 }
