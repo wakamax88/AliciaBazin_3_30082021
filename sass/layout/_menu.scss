@@ -32,12 +32,21 @@
         }
         &-checkmark {
             background-color: $color-tertiary-light;
-            padding: 16px;
         }
         &-checkbox {
             position: absolute;
             top: 0;
+            opacity: 0;
         }
     }
 }
-
+.checkmark {
+    padding: 0px;
+    width: 0px;
+    transition: all 1s;
+}
+input:checked ~ .checkmark {
+    padding: 16px;
+    width: 50px;
+    display: block;
+}

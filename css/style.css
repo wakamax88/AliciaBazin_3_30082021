@@ -378,11 +378,23 @@ footer * {
 }
 .menu-choice__box-checkmark {
   background-color: #99E2D0;
-  padding: 16px;
 }
 .menu-choice__box-checkbox {
   position: absolute;
   top: 0;
+  opacity: 0;
+}
+
+.checkmark {
+  padding: 0px;
+  width: 0px;
+  transition: all 1s;
+}
+
+input:checked ~ .checkmark {
+  padding: 16px;
+  width: 50px;
+  display: block;
 }
 
 .intro {
