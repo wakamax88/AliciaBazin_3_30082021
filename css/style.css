@@ -244,6 +244,10 @@ html {
   opacity: 0;
   animation: animatebottom 1s ease-out 2s forwards;
 }
+.wrapper-menu-04 {
+  opacity: 0;
+  animation: animatebottom 1s ease-out 3s forwards;
+}
 
 body {
   /*max-width: 375px;*/
@@ -349,9 +353,13 @@ footer * {
   gap: 16px;
 }
 
+.new {
+  opacity: 0;
+}
+
 .menu-choice {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 12px;
 }
