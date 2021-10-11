@@ -1,0 +1,22 @@
+// _footer.scss
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $color-grey-dark;
+    padding: 24px;
+    gap: 16px;
+    & * {
+        color: white;
+    }
+}
+.list-footer {
+    list-style: none;
+    & li:not(last-child) {
+        padding-bottom: 8px;
+    }
+}
+.heading-footer {
+    width: 100%;
+}

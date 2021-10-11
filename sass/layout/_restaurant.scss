@@ -1,0 +1,42 @@
+// _restaurant.scss
+.resto {
+    height: 320px;
+    position: relative;
+    background-color: $color-grey-light-2;
+}
+.img-resto {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+.heading-resto {
+    border-radius: 48px;
+    position: absolute;
+    bottom: 12px;
+    padding: 32px 16px 16px 16px;
+    background-color: inherit;
+    width: 100%;
+}
+.icon-resto {
+    position: absolute;
+    right: 32px;
+}
+
+
+
+
+.bistro {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 16px;
+    background-color: $color-grey-light-2;
+}
+.gallery {
+    display: grid;
+    gap: 16px;
+}
+.new {
+    opacity: 0;
+}
+
