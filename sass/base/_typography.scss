@@ -111,9 +111,18 @@ $font-text-thin: 'RobotoThin', sans-serif;
             color: $color-grey-light-2;
         }
         &:hover .fas {
-            transition: color 2s;
+            transition: all 2s;
             font-weight: 900;
-            color: rgba(147,86,220,1);
+            background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:active .fas {
+            transition: all 2s;
+            font-weight: 900;
+            background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     &-step {
