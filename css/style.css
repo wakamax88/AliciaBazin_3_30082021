@@ -259,7 +259,7 @@ html {
 }
 
 body {
-  /*max-width: 375px;*/
+  max-width: 960px;
   margin: 0 auto;
   min-height: 100vh;
 }
